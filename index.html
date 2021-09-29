@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-        <style>
-       
-        div{
-            width: 100px;
-            height: 100px;
-            background-color: black;
-            animation-name: example;
-            animation-duration: 10s;
-        }
-
-         @keyframes example {
-            from {background-color: #800f2f;}
-            to {background-color: #3c096c;}
-        }
-
-        body{
-            background-color:#8a5a44;
-
-        }
-
-    </style>
-    
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About me page</title>  
+
+    <style>
+            #navbar{
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: cornsilk;
+            }
+            ul{
+                margin: 0;
+            }
+            h1{
+                font-family: Lobster;
+            }
+       
+
+        body{
+            background-color:#ffb4a2;
+
+        }
+        .black-text{
+            color: black;
+        }
+
+        .column{
+            float: left;
+            width: 50%;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear:both ;
+        }
+
+    </style>
     <h1>Constance Crawford</h1>
-    <a href="./index.html">HOME</a>
-    <a href="./jobs.html">JOBS</a>
-    <a href="./education.html">EDUCATION</a>
+        <ul id="navbar">
+
+        <a class="black-text" href="./index.html" >HOME</a>
+    <a class="black-text" href="./jobs.html" >JOBS</a>
+    <a class="black-text" href="./education.html" >EDUCATION</a>
+ </ul>
+
+ 
+
+
     <img src="aboutme photo.jpg" width="200"  alt="Photo of Constance">
     <h2>Heading home after dinner with the family</h2>
     
 </head>
 
 <body>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
 
-    <ul>
+    </div>
+
+    <ul class="column">
         <li>2002 - graduated from highschool</li>
         <li>2020 graduated from college</li>
         <li>2020 graduated from Kable Academy</li>
@@ -52,6 +78,6 @@
         <li>I love traveling</li>
         <li>I love scary movies</li>
     </ol>
-    <a href="https://www.linkedin.com/in/constance-crawford-59559382/">My Linkedin Page</a>
+    <a class="black-text" href="https://www.linkedin.com/in/constance-crawford-59559382/">My Linkedin Page</a>
 </body>
 </html>
